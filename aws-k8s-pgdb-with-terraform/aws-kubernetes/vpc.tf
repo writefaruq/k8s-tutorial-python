@@ -35,7 +35,7 @@ resource "aws_subnet" "kube" {
 resource "aws_internet_gateway" "kube" {
   vpc_id = "${aws_vpc.kube.id}"
 
-  tags {
+  tags = {
     Name = "kubetutorial101"
   }
 }

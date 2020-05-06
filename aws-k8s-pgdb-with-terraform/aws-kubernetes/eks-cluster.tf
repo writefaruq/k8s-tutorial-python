@@ -46,7 +46,7 @@ resource "aws_security_group" "kube-cluster" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
-  tags {
+  tags = {
     Name = "kubetutorial101"
   }
 }
